@@ -8,42 +8,50 @@ const HomePageContent = () => {
   return (
     <>
       {/* Company Details */}
-      <div className=" h-[60vh]  w-full ">
-        <h1 className="font-bold text-3xl  mt-7 text-center text-gray-600">
-          -: Welcome to Detailing Services :-
+      <div className=" w-full ">
+        <h1 className="font-bold mt-7 mb-10 text-center text-gray-600 xl:text-3xl sm:text-xl md:text-[50px]">
+          Welcome to Detailing Services
         </h1>
-        <div className="  grid grid-cols-2  mt-12 justify-center">
-          {/* content */}
-          <div className=" h-80 p-6 text-gray-500">
-            <span>
-              Arsalan Detailing Services provides industry leading steel
-              detailing services. ADS is an innovative Structural Steel
-              Detailing company committed to providing quality steel detailing
-              services to the commercial and industrial industry.
-            </span>
-            <br />
-            <br />
-            <span>
-              Initiated the Structural Steel Detailing, our directors and
-              principal engineers, have worked in professional Structural Steel
-              Detailing and Fabrication sector for reputed companies and have
-              been successful in multiple projects with aggressive schedules.
-            </span>
-            <br />
-            <br />
-            <span>
-              Initiated the Structural Steel Detailing, our directors and
-              principal engineers, have worked in professional Structural Steel
-              Detailing and Fabrication sector for reputed companies and have
-              been successful in multiple projects with aggressive schedules.
-            </span>
-          </div>
-          {/* image */}
-          <div className="border detailing-Image ">
-            <span>for image</span>
-          </div>
+      </div>
+
+      {/* content */}
+
+      <div className=" flex justify-center flex-wrap ">
+        <div className=" h-full w-[700px]  p-6 text-gray-500">
+          <span>
+            Arsalan Detailing Services provides industry leading steel detailing
+            services. ADS is an innovative Structural Steel Detailing company
+            committed to providing quality steel detailing services to the
+            commercial and industrial industry.
+          </span>
+          <br />
+          <br />
+          <span>
+            Initiated the Structural Steel Detailing, our directors and
+            principal engineers, have worked in professional Structural Steel
+            Detailing and Fabrication sector for reputed companies and have been
+            successful in multiple projects with aggressive schedules.
+          </span>
+          <br />
+          <br />
+          <span>
+            Initiated the Structural Steel Detailing, our directors and
+            principal engineers, have worked in professional Structural Steel
+            Detailing and Fabrication sector for reputed companies and have been
+            successful in multiple projects with aggressive schedules.
+          </span>
+        </div>
+        {/* image */}
+        <div className="border detailing-Image h-full w-[700px]">
+          {/* <span>for image</span> */}
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/050/784/265/small/oil-refinery-working-at-sunset-industrial-background-photo.jpg"
+            alt=""
+            className="h-96"
+          />
         </div>
       </div>
+
       {/* OUR SERVICES */}
       <div>
         <div>
@@ -159,7 +167,6 @@ const HomePageContent = () => {
                 </h1>
               </div>
             </div>
-
             {/* box-2 */}
             <div className=" w-[520px] h-80 relative">
               {/* Image */}
@@ -176,7 +183,6 @@ const HomePageContent = () => {
                 </h1>
               </div>
             </div>
-
             {/* box-3 */}
             <div className=" w-[520px] h-80 relative">
               {/* Image */}
@@ -193,7 +199,6 @@ const HomePageContent = () => {
                 </h1>
               </div>
             </div>
-
             {/* box-4 */}
             <div className=" w-[520px] h-80 relative">
               {/* Image */}
