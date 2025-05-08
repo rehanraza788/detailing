@@ -17,10 +17,18 @@ function SwiperImage() {
     {
       url: "https://thumbs.dreamstime.com/b/robust-steel-frame%E2%80%A6beam-assembly-image-showcases-371595243.jpg?w=992"
     },
-    { url: "/public/images/image-2.jpg" },
-    { url: "/public/images/image-3.jpg" },
-    { url: "/public/images/image-4.jpg" },
-    { url: "/public/images/image-5.jpg" },
+    {
+      url: "	https://thumbs.dreamstime.com/b/captivating-night-…t-bright-white-backdrop-image-349761600.jpg?w=992"
+    },
+    {
+      url: "https://thumbs.dreamstime.com/b/beautifully-design…aesthetic-appeal-space-occupy-342777123.jpg?w=992"
+    },
+    {
+      url: "	https://thumbs.dreamstime.com/b/rusty-metal-chain-…setting-close-up-view-reveals-347557317.jpg?w=992"
+    },
+    {
+      url: "https://thumbs.dreamstime.com/b/commercial-buildin…re-safety-measures-structural-144449397.jpg?w=992"
+    },
     { url: "/public/images/image-6.jpg" }
   ];
   return (
