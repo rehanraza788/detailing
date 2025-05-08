@@ -6,7 +6,7 @@ const Contact = () => {
     <>
       {/* heading for contact */}
       <div>
-        <h1 className="text-center text-4xl font-semibold mt-7 mb-2 text-gray-600">
+        <h1 className="text-center  text-3xl sm:text-4xl font-semibold mt-7 mb-2 text-gray-600">
           Contact
         </h1>
         <hr className=" w-36 m-auto border-2 border-gray-500" />
@@ -15,10 +15,10 @@ const Contact = () => {
       <div className="w-full  sm:mt-24 sm:mb-20 flex  justify-center flex-wrap gap-10 mb-5  ">
         {/* Company details */}
         <div className=" w-[700px] h-full">
-          <h2 className="p-2 text-3xl">
+          <h2 className="p-3 text-3xl">
             THANK YOU FOR VISITING MILD S SOLUTIONS
           </h2>
-          <p className="p-2 text-[15px] font-semibold">
+          <p className="p-3 text-[15px] font-semibold ">
             We hope your visit to our website has been of value. We truely
             appreciate your effort in learning about our steel detailing
             services. If you haven not done so yet, please browse through our
