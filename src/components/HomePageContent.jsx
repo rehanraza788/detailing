@@ -9,7 +9,7 @@ const HomePageContent = () => {
     <>
       {/* Company Details */}
       <div className=" w-full ">
-        <h1 className="font-bold mt-7 mb-10 text-center text-gray-600 xl:text-3xl sm:text-xl md:text-[50px]">
+        <h1 className="font-bold mt-7 mb-10 text-center text-gray-600 text-2xl sm:text-3xl ">
           Welcome to Detailing Services
         </h1>
       </div>
@@ -42,7 +42,7 @@ const HomePageContent = () => {
           </span>
         </div>
         {/* image */}
-        <div className="border detailing-Image h-full w-[700px]">
+        <div className=" detailing-Image h-full w-[700px] p-6 sm:p-0">
           {/* <span>for image</span> */}
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/050/784/265/small/oil-refinery-working-at-sunset-industrial-background-photo.jpg"
@@ -55,89 +55,89 @@ const HomePageContent = () => {
       {/* OUR SERVICES */}
       <div>
         <div>
-          <h1 className="text-center text-3xl font-bold text-gray-600 p-4">
-            -: OUR SERVICES :-
+          <h1 className="text-center text-[30px] sm:text-3xl sm:mt-3 font-bold text-gray-600 p-4">
+            OUR SERVICES
           </h1>
+        </div>
 
-          <div className=" mx-48 flex flex-wrap justify-center gap-4 p-5 ">
-            {/* box -1  */}
-            <div className="border-2 border-gray-600 w-[450px] h-64 flex rounded-sm ">
-              <div className="w-48 h-full">
-                <AiOutlineCalculator className="text-8xl mt-20 ml-4" />
-              </div>
-              <div className="w-full  h-full ">
-                <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
-                  Estimations
-                </h1>
-                <p className="p-1 text-gray-600">
-                  Every job is estimations accurately based on specific man hour
-                  cast and item method.There is no guess work is our estimation
-                </p>
-                <br />
-                <button className="text-white border-2 border-black p-1 ml-3 bg-black">
-                  Read More
-                </button>
-              </div>
+        <div className="mx-1 sm:mx-48 flex flex-wrap justify-center gap-4 p-5 ">
+          {/* box -1  */}
+          <div className="border-2 border-gray-600 w-[420px]  sm:w-[450px] h-80 sm:h-64 flex rounded-sm ">
+            <div className="w-48 h-full">
+              <AiOutlineCalculator className="text-8xl mt-20 ml-4" />
             </div>
-            {/* box-2 */}
-            <div className="border-2 border-gray-600 w-[450px] h-64 flex">
-              <div className="w-48 h-full">
-                <RiFileList3Line className="text-8xl mt-20 ml-4" />
-              </div>
-              <div className="w-full  h-full">
-                <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
-                  Advance Bill of Material
-                </h1>
-                <p className="p-1 text-gray-600">
-                  Every job is estimations accurately based on specific man hour
-                  cast and item method.There is no guess work is our estimation
-                </p>
-                <br />
-                <button className="text-white border-2 border-black p-1 ml-3 bg-black">
-                  Read More
-                </button>
-              </div>
+            <div className="w-full  h-full ">
+              <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
+                Estimations
+              </h1>
+              <p className="p-1 text-gray-600">
+                Every job is estimations accurately based on specific man hour
+                cast and item method.There is no guess work is our estimation
+              </p>
+              <br />
+              <button className="text-white border-2 border-black p-1 ml-3 bg-black">
+                Read More
+              </button>
             </div>
-
-            {/* box-3 */}
-
-            <div className="border-2 border-gray-600 w-[450px] h-64 flex">
-              <div className="w-48 h-full">
-                <LuBolt className="text-8xl mt-20 ml-4" />
-              </div>
-              <div className="w-full  h-full">
-                <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
-                  Bolt Lists
-                </h1>
-                <p className="p-1 text-gray-600">
-                  Every job is estimations accurately based on specific man hour
-                  cast and item method.There is no guess work is our estimation
-                </p>
-                <br />
-                <button className="text-white border-2 border-black p-1 ml-3 bg-black">
-                  Read More
-                </button>
-              </div>
+          </div>
+          {/* box-2 */}
+          <div className="border-2 border-gray-600 w-[450px] h-64 flex">
+            <div className="w-48 h-full">
+              <RiFileList3Line className="text-8xl mt-20 ml-4" />
             </div>
-            {/* box-4 */}
+            <div className="w-full  h-full">
+              <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
+                Advance Bill of Material
+              </h1>
+              <p className="p-1 text-gray-600">
+                Every job is estimations accurately based on specific man hour
+                cast and item method.There is no guess work is our estimation
+              </p>
+              <br />
+              <button className="text-white border-2 border-black p-1 ml-3 bg-black">
+                Read More
+              </button>
+            </div>
+          </div>
 
-            <div className="border-2 border-gray-600 w-[450px] h-64 flex">
-              <div className="w-48 h-full">
-                <MdConveyorBelt className="text-8xl mt-20 ml-4" />
-              </div>
-              <div className="w-full  h-full">
-                <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
-                  Conveyor Structures
-                </h1>
-                <p className="p-1 text-gray-600">
-                  Every job is estimations accurately based on specific man hour
-                  cast and item method.There is no guess work is our estimation
-                </p>
-                <br />
-                <button className="text-white border-2 border-black p-1 ml-3 bg-black">
-                  Read More
-                </button>
-              </div>
+          {/* box-3 */}
+
+          <div className="border-2 border-gray-600 w-[450px] h-64 flex">
+            <div className="w-48 h-full">
+              <LuBolt className="text-8xl mt-20 ml-4" />
+            </div>
+            <div className="w-full  h-full">
+              <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
+                Bolt Lists
+              </h1>
+              <p className="p-1 text-gray-600">
+                Every job is estimations accurately based on specific man hour
+                cast and item method.There is no guess work is our estimation
+              </p>
+              <br />
+              <button className="text-white border-2 border-black p-1 ml-3 bg-black">
+                Read More
+              </button>
+            </div>
+          </div>
+          {/* box-4 */}
+
+          <div className="border-2 border-gray-600 w-[450px] h-64 flex">
+            <div className="w-48 h-full">
+              <MdConveyorBelt className="text-8xl mt-20 ml-4" />
+            </div>
+            <div className="w-full  h-full">
+              <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
+                Conveyor Structures
+              </h1>
+              <p className="p-1 text-gray-600">
+                Every job is estimations accurately based on specific man hour
+                cast and item method.There is no guess work is our estimation
+              </p>
+              <br />
+              <button className="text-white border-2 border-black p-1 ml-3 bg-black">
+                Read More
+              </button>
             </div>
           </div>
         </div>
@@ -149,71 +149,71 @@ const HomePageContent = () => {
           <h1 className="text-center text-3xl font-bold text-gray-600 p-4">
             -:OUR PROJECT :-
           </h1>
+        </div>
 
-          <div className=" mx-36 flex flex-wrap justify-center gap-1 p-5 ">
-            {/* box -1  */}
-            <div className="0 w-[520px] h-80 relative">
-              {/* Image */}
-              <img
-                src="/public/images/COMMERCIAL BUILDING.jpg"
-                alt="High Rise Building"
-                className="w-full h-full object-cover"
-              />
+        <div className=" mx-36 flex flex-wrap justify-center gap-1 p-5 ">
+          {/* box -1  */}
+          <div className="0 w-[520px] h-80 relative">
+            {/* Image */}
+            <img
+              src="/public/images/COMMERCIAL BUILDING.jpg"
+              alt="High Rise Building"
+              className="w-full h-full object-cover"
+            />
 
-              {/* Heading on Image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="text-white text-2xl font-bold bg-black bg-opacity-50 mt-60">
-                  COMMERCIAL BUILDING
-                </h1>
-              </div>
+            {/* Heading on Image */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h1 className="text-white text-2xl font-bold bg-black bg-opacity-50 mt-60">
+                COMMERCIAL BUILDING
+              </h1>
             </div>
-            {/* box-2 */}
-            <div className=" w-[520px] h-80 relative">
-              {/* Image */}
-              <img
-                src="/public/images/HIGH RISE BUILDING.jpg"
-                alt="High Rise Building"
-                className="w-full h-full object-cover"
-              />
+          </div>
+          {/* box-2 */}
+          <div className=" w-[520px] h-80 relative">
+            {/* Image */}
+            <img
+              src="/public/images/HIGH RISE BUILDING.jpg"
+              alt="High Rise Building"
+              className="w-full h-full object-cover"
+            />
 
-              {/* Heading on Image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="text-black text-2xl font-bold bg-white bg-opacity-50 mt-60">
-                  MULTISTORY & HIGH RISE BUILDING
-                </h1>
-              </div>
+            {/* Heading on Image */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h1 className="text-black text-2xl font-bold bg-white bg-opacity-50 mt-60">
+                MULTISTORY & HIGH RISE BUILDING
+              </h1>
             </div>
-            {/* box-3 */}
-            <div className=" w-[520px] h-80 relative">
-              {/* Image */}
-              <img
-                src="/public/images/HIGH RISE BUILDING.jpg"
-                alt="High Rise Building"
-                className="w-full h-full object-cover"
-              />
+          </div>
+          {/* box-3 */}
+          <div className=" w-[520px] h-80 relative">
+            {/* Image */}
+            <img
+              src="/public/images/HIGH RISE BUILDING.jpg"
+              alt="High Rise Building"
+              className="w-full h-full object-cover"
+            />
 
-              {/* Heading on Image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="text-black text-2xl font-bold bg-white bg-opacity-50 mt-60">
-                  MULTISTORY & HIGH RISE BUILDING
-                </h1>
-              </div>
+            {/* Heading on Image */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h1 className="text-black text-2xl font-bold bg-white bg-opacity-50 mt-60">
+                MULTISTORY & HIGH RISE BUILDING
+              </h1>
             </div>
-            {/* box-4 */}
-            <div className=" w-[520px] h-80 relative">
-              {/* Image */}
-              <img
-                src="/public/images/HIGH RISE BUILDING.jpg"
-                alt="High Rise Building"
-                className="w-full h-full object-cover"
-              />
+          </div>
+          {/* box-4 */}
+          <div className=" w-[520px] h-80 relative">
+            {/* Image */}
+            <img
+              src="/public/images/HIGH RISE BUILDING.jpg"
+              alt="High Rise Building"
+              className="w-full h-full object-cover"
+            />
 
-              {/* Heading on Image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="text-black text-2xl font-bold bg-white bg-opacity-50 mt-60">
-                  MULTISTORY & HIGH RISE BUILDING
-                </h1>
-              </div>
+            {/* Heading on Image */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h1 className="text-black text-2xl font-bold bg-white bg-opacity-50 mt-60">
+                MULTISTORY & HIGH RISE BUILDING
+              </h1>
             </div>
           </div>
         </div>
