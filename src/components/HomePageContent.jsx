@@ -146,12 +146,12 @@ const HomePageContent = () => {
 
       <div>
         <div>
-          <h1 className="text-center text-3xl font-bold text-gray-600 p-4">
-            -:OUR PROJECT :-
+          <h1 className="text-center text-2xl sm:text-3xl font-bold text-gray-600 p-4">
+            OUR PROJECT
           </h1>
         </div>
 
-        <div className=" mx-36 flex flex-wrap justify-center gap-1 p-5 ">
+        <div className=" mx-0 sm:mx-36 flex flex-wrap justify-center gap-2 p-5 ">
           {/* box -1  */}
           <div className="0 w-[520px] h-80 relative">
             {/* Image */}
