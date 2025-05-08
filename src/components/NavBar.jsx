@@ -63,22 +63,34 @@ const NavBar = () => {
           }`}
         >
           <li className="list-none">
-            <NavLink to={"/"}>HOME</NavLink>
+            <NavLink to={"/"} onClick={() => setMenuOpen(false)}>
+              HOME
+            </NavLink>
           </li>
           <li className="list-none">
-            <NavLink to={"/about"}>ABOUT US</NavLink>
+            <NavLink to={"/about"} onClick={() => setMenuOpen(false)}>
+              ABOUT US
+            </NavLink>
           </li>
           <li className="list-none">
-            <NavLink to={"/service"}>SERVICES</NavLink>
+            <NavLink to={"/service"} onClick={() => setMenuOpen(false)}>
+              SERVICES
+            </NavLink>
           </li>
           <li className="list-none">
-            <NavLink to={"/project"}>PROJECTS</NavLink>
+            <NavLink to={"/project"} onClick={() => setMenuOpen(false)}>
+              PROJECTS
+            </NavLink>
           </li>
           <li className="list-none">
-            <NavLink to={"/samples"}>SAMPLES</NavLink>
+            <NavLink to={"/samples"} onClick={() => setMenuOpen(false)}>
+              SAMPLES
+            </NavLink>
           </li>
           <li className="list-none">
-            <NavLink to={"/contacts"}>CONTACT</NavLink>
+            <NavLink to={"/contacts"} onClick={() => setMenuOpen(false)}>
+              CONTACT
+            </NavLink>
           </li>
         </div>
       </nav>
