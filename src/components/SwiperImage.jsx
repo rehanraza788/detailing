@@ -14,7 +14,9 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 function SwiperImage() {
   const images = [
-    { url: "/public/images/image-1.jpg" },
+    {
+      url: "https://thumbs.dreamstime.com/b/robust-steel-frame%E2%80%A6beam-assembly-image-showcases-371595243.jpg?w=992"
+    },
     { url: "/public/images/image-2.jpg" },
     { url: "/public/images/image-3.jpg" },
     { url: "/public/images/image-4.jpg" },
