@@ -28,8 +28,7 @@ function SwiperImage() {
     },
     {
       url: "https://thumbs.dreamstime.com/b/commercial-buildin…re-safety-measures-structural-144449397.jpg?w=992"
-    },
-    { url: "/public/images/image-6.jpg" }
+    }
   ];
   return (
     <>
