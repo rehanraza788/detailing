@@ -4,11 +4,11 @@ const Projects = () => {
   return (
     <>
       <div>
-        <h1 className="font-bold text-3xl  mt-8 mb-4 text-center text-gray-600 ">
+        <h1 className="font-bold text-2xl sm:text-3xl  mt-8 mb-4 text-center text-gray-600 ">
           Welcome to Detailing Services
         </h1>
       </div>
-      <div className=" w-screen h-96 flex flex-wrap justify-center gap-2">
+      <div className=" w-screen  flex flex-wrap justify-center gap-2">
         <div className="border-2 border-gray-300 w-[40%] h-[85%] flex">
           {/* for  image  */}
           <div className="w-1/2 h-full  ">
@@ -55,7 +55,7 @@ const Projects = () => {
         </div>
       </div>
       {/* TYPE OF PROJECTS COVERED BY US */}
-      <div className="ml-36 flex flex-col gap-2">
+      <div className=" ml-9 mt-6 sm:ml-36 flex flex-col gap-2">
         <h1 className="font-semibold text-xl text-red-500">
           TYPE OF PROJECTS COVERED BY US
         </h1>
@@ -65,8 +65,8 @@ const Projects = () => {
         </h2>
       </div>
       {/* for list */}
-      <div className=" w-full h-56 flex justify-center flex-wrap gap-3">
-        <div className=" w-96 h-full">
+      <div className=" w-full flex justify-center flex-wrap sm:gap-3 ">
+        <div className=" w-96 ">
           <ul className="list">
             <li>Commercial Building</li>
             <li>Multistory & High Risk Building</li>
@@ -76,7 +76,7 @@ const Projects = () => {
             <li>Stadium</li>
           </ul>
         </div>
-        <div className=" w-96 h-full">
+        <div className=" w-96 ">
           <ul className="list">
             <li>Airports</li>
             <li>Staircase, Handrails & Misc. steel</li>
@@ -85,7 +85,7 @@ const Projects = () => {
             <li>Pipe Rack Support</li>
           </ul>
         </div>
-        <div className=" w-96 h-full">
+        <div className=" w-96 ">
           <ul className="list">
             <li>Pre-Engineering Buildings</li>
             <li>Warehouses</li>

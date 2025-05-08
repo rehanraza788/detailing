@@ -12,7 +12,7 @@ const Contact = () => {
         <hr className=" w-36 m-auto border-2 border-gray-500" />
       </div>
       {/* contact Information */}
-      <div className="w-full  mt-10 flex  justify-center flex-wrap gap-10 mb-5 ">
+      <div className="w-full  sm:mt-24 sm:mb-20 flex  justify-center flex-wrap gap-10 mb-5  ">
         {/* Company details */}
         <div className=" w-[700px] h-full">
           <h2 className="p-2 text-3xl">
