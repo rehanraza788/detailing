@@ -9,7 +9,7 @@ const Services = () => {
         <img src="/public/images/image-6.jpg" alt="image" />
       </div> */}
       <div>
-        <h1 className="text-center text-3xl font-bold text-gray-600 p-4">
+        <h1 className="text-center text-2xl sm:text-3xl font-bold text-gray-600 p-4">
           OUR STRUCTURAL DRAFTING & DETAILING SERVICES
         </h1>
         <div className=" flex  flex-wrap justify-center gap-4 p-5">
