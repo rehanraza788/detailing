@@ -3,22 +3,27 @@ import "./style.css";
 const Projects = () => {
   return (
     <>
+      {/* heading */}
       <div>
         <h1 className="font-bold text-2xl sm:text-3xl  mt-8 mb-4 text-center text-gray-600 ">
           Welcome to Detailing Services
         </h1>
       </div>
-      <div className=" w-screen  flex flex-wrap justify-center gap-2">
-        <div className="border-2 border-gray-300 w-[40%] h-[85%] flex">
-          {/* for  image  */}
-          <div className="w-1/2 h-full  ">
+
+      {/* heading  end*/}
+      <div className="w-screen flex flex-wrap justify-center gap-2">
+        <div className="sm:border-2 sm:border-gray-300 w-full sm:w-[40%] flex flex-col sm:flex-row">
+          {/* Image section */}
+          <div className="w-full sm:w-1/2 h-60 sm:h-full">
             <img
-              src="/public/images/multistorey.jpg"
-              className="w-full h-full "
+              src="/images/multistorey.jpg"
+              className="w-full h-full object-cover p-2 sm:p-0"
               alt="image"
             />
           </div>
-          <div className="w-1/2 h-full  ">
+
+          {/* Text section */}
+          <div className="w-full sm:w-1/2 h-auto sm:h-full">
             <h1 className="text-center font-bold mt-2 p-2 text-xl text-orange-600">
               COMMERCIAL
             </h1>
@@ -31,31 +36,37 @@ const Projects = () => {
             </p>
           </div>
         </div>
+
         {/* for image  */}
-        <div className="border-2 border-gray-300 w-[40%] h-[85%] flex">
-          <div className="w-1/2 h-full  ">
-            <img
-              src="/public/images/commercial.jpg"
-              className="w-full h-full "
-              alt="image"
-            />
-          </div>
-          <div className="w-1/2 h-full ">
-            <h1 className="text-center font-bold mt-2 p-2 text-xl text-orange-600">
-              INDUSTRIAL
-            </h1>
-            <p className="p-3 text-gray-700">
-              Arsalan Detailing Services deals with steel structures of all
-              types, shapes and sizes that typically range from 50 to 5000 tons.
-              The company follows customized fabrication standards and project
-              scopes, maintaining the guidelines set by the AISC, NISD and OSHA
-              to produce structures of the future.
-            </p>
+        <div className="w-screen flex flex-wrap justify-center gap-2">
+          <div className="border-0 sm:border-2 sm:border-gray-300 w-full sm:w-[40%] flex flex-col sm:flex-row">
+            {/* Image section */}
+            <div className="w-full sm:w-1/2 h-60 sm:h-full">
+              <img
+                src="/public/images/commercial.jpg"
+                className="w-full h-full object-cover p-2 sm:p-0"
+                alt="image"
+              />
+            </div>
+
+            {/* Text section */}
+            <div className="w-full sm:w-1/2 h-auto sm:h-full">
+              <h1 className="text-center font-bold mt-2 p-2 text-xl text-orange-600">
+                INDUSTRIAL
+              </h1>
+              <p className="p-3 text-gray-700">
+                Arsalan Detailing Services deals with steel structures of all
+                types, shapes and sizes that typically range from 50 to 5000
+                tons. The company follows customized fabrication standards and
+                project scopes, maintaining the guidelines set by the AISC, NISD
+                and OSHA to produce structures of the future.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       {/* TYPE OF PROJECTS COVERED BY US */}
-      <div className=" ml-9 mt-6 sm:ml-36 flex flex-col gap-2">
+      <div className=" ml-3 mt-6 sm:ml-36 flex flex-col gap-2">
         <h1 className="font-semibold text-xl text-red-500">
           TYPE OF PROJECTS COVERED BY US
         </h1>
