@@ -1,224 +1,147 @@
 import React from "react";
-import { AiOutlineCalculator } from "react-icons/ai";
-import { LuBolt } from "react-icons/lu";
-import { MdConveyorBelt } from "react-icons/md";
-import { RiFileList3Line } from "react-icons/ri";
+
+const services = [
+  {
+    img: "/public/images/structure.jpg",
+    title: "Structural Steel Detailing"
+  },
+  {
+    img: "/public/images/structure.jpg",
+    title: "Miscellaneous steel Detailing"
+  },
+
+  {
+    img: "/public/images/structure.jpg",
+    title: "Pipe Rake Support Structure "
+  },
+  {
+    img: "/public/images/structure.jpg",
+    title: "Advance Bill of Material (ABM)"
+  }
+  // Add more services as needed
+];
+
+const projects = [
+  {
+    img: "/public/images/COMMERCIAL BUILDING.jpg",
+    title: "COMMERCIAL BUILDING",
+    textColor: "text-white",
+    bgColor: "bg-black bg-opacity-30"
+  },
+  {
+    img: "/public/images/MULTISTORY.png",
+    title: "MULTISTORY & HIGH RISE BUILDING",
+    textColor: "text-white",
+    bgColor: "bg-black bg-opacity-30"
+  },
+  {
+    img: "/public/images/school.png",
+    title: "SCHOOL AND COLLEGE BUILDINGS",
+    textColor: "text-white",
+    bgColor: "bg-black bg-opacity-30"
+  },
+  {
+    img: "/public/images/hospital.png",
+    title: "Industrial Steel Structure",
+    textColor: "text-white",
+    bgColor: "bg-black bg-opacity-30"
+  }
+];
 
 const HomePageContent = () => {
   return (
-    <>
+    <div className="bg-gray-50 min-h-screen">
       {/* Company Details */}
-      <div className=" w-full ">
-        <h1 className="font-bold mt-7 mb-10 text-center text-gray-600 text-2xl sm:text-3xl ">
-          Welcome to Detailing Services
+      <section className="py-12 text-center">
+        <h1 className="font-extrabold text-3xl sm:text-4xl text-gray-700 mb-4">
+          Welcome to MetalWorks Detailing Solutions
         </h1>
-      </div>
+        <p className="max-w-2xl mx-auto text-gray-500 text-lg">
+          MetalWorks Detailing Solutions provides industry-leading steel
+          detailing services. MDS is an innovative structural steel detailing
+          company committed to delivering high-quality services for both
+          structural and miscellaneous steel detailing.
+        </p>
+      </section>
 
-      {/* content */}
-
-      <div className=" flex justify-center flex-wrap ">
-        <div className=" h-full w-[700px]  p-6 text-gray-500">
-          <span>
-            Arsalan Detailing Services provides industry leading steel detailing
-            services. ADS is an innovative Structural Steel Detailing company
-            committed to providing quality steel detailing services to the
-            commercial and industrial industry.
-          </span>
-          <br />
-          <br />
-          <span>
-            Initiated the Structural Steel Detailing, our directors and
-            principal engineers, have worked in professional Structural Steel
-            Detailing and Fabrication sector for reputed companies and have been
-            successful in multiple projects with aggressive schedules.
-          </span>
-          <br />
-          <br />
-          <span>
-            Initiated the Structural Steel Detailing, our directors and
-            principal engineers, have worked in professional Structural Steel
-            Detailing and Fabrication sector for reputed companies and have been
-            successful in multiple projects with aggressive schedules.
-          </span>
-        </div>
-        {/* image */}
-        <div className=" detailing-Image h-full w-[700px] p-6 sm:p-0">
-          {/* <span>for image</span> */}
+      {/* Image and About */}
+      <section className="flex flex-col md:flex-row items-center justify-center gap-8 px-4 mb-16">
+        <div className="flex-1 max-w-xl">
           <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/050/784/265/small/oil-refinery-working-at-sunset-industrial-background-photo.jpg"
-            alt=""
-            className="h-96"
+            src="/public/images/snap_001.png"
+            alt="Industrial"
+            className="rounded-lg shadow-lg w-full h-80 object-cover"
+            onError={(e) => {
+              e.target.src =
+                "https://via.placeholder.com/600x400?text=Image+Not+Found";
+            }}
           />
         </div>
-      </div>
+        <div className="max-w-xl text-gray-600 text-lg"></div>
+      </section>
 
       {/* OUR SERVICES */}
-      <div>
-        <div>
-          <h1 className="text-center text-[30px] sm:text-3xl sm:mt-3 font-bold text-gray-600 p-4">
-            OUR SERVICES
-          </h1>
+      <section className="py-10 bg-white">
+        <h2 className="text-center text-3xl font-bold text-gray-700 mb-8">
+          OUR SERVICES
+        </h2>
+        <div className="flex flex-wrap justify-center gap-8 px-4">
+          {services.map((service, idx) => (
+            <div
+              key={idx}
+              className="bg-gray-50 border border-gray-200 rounded-lg shadow hover:shadow-lg transition w-80 p-6 flex flex-col items-center text-center"
+            >
+              <img
+                src={service.img}
+                alt={service.title}
+                className="w-24 h-24 object-cover rounded mb-4"
+                onError={(e) => {
+                  e.target.src = "https://via.placeholder.com/96?text=No+Image";
+                }}
+              />
+              <h3 className="font-bold text-xl text-gray-800 mb-2">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 mb-4">{service.desc}</p>
+            </div>
+          ))}
         </div>
+      </section>
 
-        <div className="mx-1 sm:mx-48 flex flex-wrap justify-center gap-4 p-5 ">
-          {/* box -1  */}
-          <div className="border-2 border-gray-600 w-[420px]  sm:w-[450px] h-80 sm:h-64 flex rounded-sm ">
-            <div className="w-48 h-full">
-              <AiOutlineCalculator className="text-8xl mt-20 ml-4" />
-            </div>
-            <div className="w-full  h-full ">
-              <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
-                Estimations
-              </h1>
-              <p className="p-1 text-gray-600">
-                Every job is estimations accurately based on specific man hour
-                cast and item method.There is no guess work is our estimation
-              </p>
-              <br />
-              <button className="text-white border-2 border-black p-1 ml-3 bg-black">
-                Read More
-              </button>
-            </div>
-          </div>
-          {/* box-2 */}
-          <div className="border-2 border-gray-600 w-[450px] h-64 flex">
-            <div className="w-48 h-full">
-              <RiFileList3Line className="text-8xl mt-20 ml-4" />
-            </div>
-            <div className="w-full  h-full">
-              <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
-                Advance Bill of Material
-              </h1>
-              <p className="p-1 text-gray-600">
-                Every job is estimations accurately based on specific man hour
-                cast and item method.There is no guess work is our estimation
-              </p>
-              <br />
-              <button className="text-white border-2 border-black p-1 ml-3 bg-black">
-                Read More
-              </button>
-            </div>
-          </div>
-
-          {/* box-3 */}
-
-          <div className="border-2 border-gray-600 w-[450px] h-64 flex">
-            <div className="w-48 h-full">
-              <LuBolt className="text-8xl mt-20 ml-4" />
-            </div>
-            <div className="w-full  h-full">
-              <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
-                Bolt Lists
-              </h1>
-              <p className="p-1 text-gray-600">
-                Every job is estimations accurately based on specific man hour
-                cast and item method.There is no guess work is our estimation
-              </p>
-              <br />
-              <button className="text-white border-2 border-black p-1 ml-3 bg-black">
-                Read More
-              </button>
-            </div>
-          </div>
-          {/* box-4 */}
-
-          <div className="border-2 border-gray-600 w-[450px] h-64 flex">
-            <div className="w-48 h-full">
-              <MdConveyorBelt className="text-8xl mt-20 ml-4" />
-            </div>
-            <div className="w-full  h-full">
-              <h1 className="font-bold text-gray-700 text-xl text-center mt-5">
-                Conveyor Structures
-              </h1>
-              <p className="p-1 text-gray-600">
-                Every job is estimations accurately based on specific man hour
-                cast and item method.There is no guess work is our estimation
-              </p>
-              <br />
-              <button className="text-white border-2 border-black p-1 ml-3 bg-black">
-                Read More
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
       {/* OUR PROJECTS */}
-
-      <div>
-        <div>
-          <h1 className="text-center text-2xl sm:text-3xl font-bold text-gray-600 p-4">
-            OUR PROJECT
-          </h1>
+      <section className="py-10">
+        <h2 className="text-center text-3xl font-bold text-gray-700 mb-8">
+          OUR PROJECTS
+        </h2>
+        <div className="flex flex-wrap justify-center gap-6 px-4">
+          {projects.map((project, idx) => (
+            <div
+              key={idx}
+              className="relative w-80 h-60 rounded-lg overflow-hidden shadow-lg"
+            >
+              <img
+                src={project.img}
+                alt={project.title}
+                className="w-full h-full object-fill"
+                onError={(e) => {
+                  e.target.src =
+                    "https://via.placeholder.com/320x240?text=Image+Not+Found";
+                }}
+              />
+              <div
+                className={`absolute inset-0 flex items-end justify-center ${project.bgColor}`}
+              >
+                <h3
+                  className={`w-full text-center ${project.textColor} text-xl font-bold py-3`}
+                >
+                  {project.title}
+                </h3>
+              </div>
+            </div>
+          ))}
         </div>
-
-        <div className=" mx-0 sm:mx-36 flex flex-wrap justify-center gap-2 p-5 ">
-          {/* box -1  */}
-          <div className="0 w-[520px] h-80 relative">
-            {/* Image */}
-            <img
-              src="/public/images/COMMERCIAL BUILDING.jpg"
-              alt="High Rise Building"
-              className="w-full h-full object-cover"
-            />
-
-            {/* Heading on Image */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h1 className="text-white text-2xl font-bold bg-black bg-opacity-50 mt-60">
-                COMMERCIAL BUILDING
-              </h1>
-            </div>
-          </div>
-          {/* box-2 */}
-          <div className=" w-[520px] h-80 relative">
-            {/* Image */}
-            <img
-              src="/public/images/HIGH RISE BUILDING.jpg"
-              alt="High Rise Building"
-              className="w-full h-full object-cover"
-            />
-
-            {/* Heading on Image */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h1 className="text-black text-2xl font-bold bg-white bg-opacity-50 mt-60">
-                MULTISTORY & HIGH RISE BUILDING
-              </h1>
-            </div>
-          </div>
-          {/* box-3 */}
-          <div className=" w-[520px] h-80 relative">
-            {/* Image */}
-            <img
-              src="/public/images/HIGH RISE BUILDING.jpg"
-              alt="High Rise Building"
-              className="w-full h-full object-cover"
-            />
-
-            {/* Heading on Image */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h1 className="text-black text-2xl font-bold bg-white bg-opacity-50 mt-60">
-                MULTISTORY & HIGH RISE BUILDING
-              </h1>
-            </div>
-          </div>
-          {/* box-4 */}
-          <div className=" w-[520px] h-80 relative">
-            {/* Image */}
-            <img
-              src="/public/images/HIGH RISE BUILDING.jpg"
-              alt="High Rise Building"
-              className="w-full h-full object-cover"
-            />
-
-            {/* Heading on Image */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h1 className="text-black text-2xl font-bold bg-white bg-opacity-50 mt-60">
-                MULTISTORY & HIGH RISE BUILDING
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+      </section>
+    </div>
   );
 };
 

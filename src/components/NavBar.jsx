@@ -17,7 +17,7 @@ const NavBar = () => {
         {/* Logo */}
         <div>
           <NavLink to={"/"}>
-            <h1 className="font-bold text-5xl font-serif text-gray-600">MSI</h1>
+            <h1 className="font-bold text-5xl font-serif text-gray-600">MDS</h1>
           </NavLink>
         </div>
 

@@ -3,56 +3,71 @@ import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <>
-      {/* heading for contact */}
-      <div>
-        <h1 className="text-center  text-3xl sm:text-4xl font-semibold mt-7 mb-2 text-gray-600">
-          Contact
+    <div className="bg-gray-50 min-h-screen py-10">
+      {/* Heading */}
+      <div className="mb-10">
+        <h1 className="text-center text-3xl sm:text-4xl font-bold text-gray-700 mb-2">
+          Contact Us
         </h1>
-        <hr className=" w-36 m-auto border-2 border-gray-500" />
+        <hr className="w-36 m-auto border-2 border-gray-400" />
       </div>
-      {/* contact Information */}
-      <div className="w-full  sm:mt-24 sm:mb-20 flex  justify-center flex-wrap gap-10 mb-5  ">
-        {/* Company details */}
-        <div className=" w-[700px] h-full">
-          <h2 className="p-3 text-3xl">
-            THANK YOU FOR VISITING MILD S SOLUTIONS
+
+      {/* Main Content */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+        {/* Company Message */}
+        <div className="md:col-span-2 bg-white rounded-xl shadow p-8 flex flex-col justify-center">
+          <h2 className="text-2xl font-semibold text-blue-700 mb-4">
+            Thank You for Visiting Metal Works Detailing Solutions
           </h2>
-          <p className="p-3 text-[15px] font-semibold ">
-            We hope your visit to our website has been of value. We truely
+          <p className="text-gray-700 mb-2">
+            We hope your visit to our website has been of value. We truly
             appreciate your effort in learning about our steel detailing
-            services. If you haven not done so yet, please browse through our
-            site to learn more about us and feel free to make any suggestions or
-            inquiries. We look forward to assisting you in all your steel
-            detailing projects. If you are in need of a quote on a project, have
-            any other questions, or need assistance, please do not hesitate to
-            contact us. We are eager to hear from you!
+            services.
+          </p>
+          <p className="text-gray-700 mb-2">
+            Please browse through our site to learn more about us and feel free
+            to make any suggestions or inquiries. We look forward to assisting
+            you in all your steel detailing projects.
+          </p>
+          <p className="text-gray-700">
+            If you need a quote, have questions, or need assistance, please do
+            not hesitate to contact us. We are eager to hear from you!
           </p>
         </div>
-        {/* head Office Details */}
-        <div className=" w-72 h-full p-3 ">
-          <h1 className="text-xl">Head Office</h1>
-          <div>
-            <p className="pt-5 text-[16px] text-red-800">
-              Arsalan Detailing Services <br /> New Delhi, India <br /> Ph no.
-              9199486786
+
+        {/* Contact Details */}
+        <div className="flex flex-col gap-8">
+          {/* Head Office */}
+          <div className="bg-white rounded-xl shadow p-6">
+            <h3 className="text-xl font-bold text-gray-800 mb-2">
+              Head Office
+            </h3>
+            <p className="text-gray-700 mb-2">
+              Arsalan Detailing Services
+              <br />
+              New Delhi, India
+              <br />
+              Ph no. 9199486786
             </p>
-            <span className="flex items-center gap-2 text-[16px] text-red-800">
+            <div className="flex items-center gap-2 text-blue-700">
               <MdEmail />
-              info@arsalandetailing.com
-            </span>
+              <span>info@arsalandetailing.com</span>
+            </div>
+          </div>
+          {/* Branch */}
+          <div className="bg-white rounded-xl shadow p-6">
+            <h3 className="text-xl font-bold text-gray-800 mb-2">Branch</h3>
+            <p className="text-gray-700">
+              Arsalan Detailing Services
+              <br />
+              Ranchi, Jharkhand, India
+              <br />
+              Ph no. 9871088166
+            </p>
           </div>
         </div>
-        {/* Branch Details */}
-        <div className=" w-72 h-full p-3">
-          <h1 className="text-xl">Branches</h1>
-          <p className="pt-5 text-[16px] text-red-800">
-            Arsalan Detailing Services <br /> Ranchi ,Jharkhand,India <br /> Ph
-            no. 9871088166
-          </p>
-        </div>
       </div>
-    </>
+    </div>
   );
 };
 

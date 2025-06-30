@@ -3,54 +3,71 @@ import { NavLink } from "react-router";
 
 const Footer = () => {
   return (
-    <>
-      <div className=" w-full bg-gray-700 flex flex-wrap justify-center sm:gap-2">
-        <div className="w-96 h-44 ">
-          <h1 className="font-bold text-gray-300 text-2xl mt-10 sm:mt-9 mb-2 pl-2 ">
-            ABOUT US
-          </h1>
-          <p className="text-gray-400 pl-2">
-            Arsalan Detailing Services provides industry leading steel detailing
-            services. ADS is an innovative Structural Steel Detailing company
-            committed to providing quality steel detailing services to the
-            commercial and industrial industry.
+    <footer className="bg-gray-800 text-gray-300 pt-10 pb-4">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-8">
+        {/* About */}
+        <div className="flex-1 min-w-[220px]">
+          <h2 className="font-bold text-xl mb-3">About Us</h2>
+          <p className="text-gray-400 text-sm">
+            MetalWorks Detailing Solutions provides industry leading steel
+            detailing services. MDS is an innovative Structural Steel Detailing
+            company committed to providing quality steel detailing services to
+            the commercial and industrial industry.
           </p>
         </div>
-        <div className="w-96  h-44 ">
-          <h1 className="font-bold text-gray-300 text-2xl mt-5 pl-2 sm:mt-9">
-            QUICK LINKS
-          </h1>
-          <ul className="text-gray-400 text-l pl-2 mt-2">
+        {/* Quick Links */}
+        <div className="flex-1 min-w-[180px]">
+          <h2 className="font-bold text-xl mb-3">Quick Links</h2>
+          <ul className="space-y-2 text-gray-400 text-sm">
             <li>
-              <NavLink to={"/"}>HOME</NavLink>
+              <NavLink to="/" className="hover:text-white transition">
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to={"/about"}>ABOUT US</NavLink>
+              <NavLink to="/about" className="hover:text-white transition">
+                About Us
+              </NavLink>
             </li>
             <li>
-              <NavLink to={"/service"}>SERVICES</NavLink>
+              <NavLink to="/service" className="hover:text-white transition">
+                Services
+              </NavLink>
             </li>
             <li>
-              <NavLink to={"/project"}>PROJECTS</NavLink>
+              <NavLink to="/project" className="hover:text-white transition">
+                Projects
+              </NavLink>
             </li>
             <li>
-              <NavLink to={"/samples"}>SAMPLES</NavLink>
+              <NavLink to="/samples" className="hover:text-white transition">
+                Samples
+              </NavLink>
             </li>
             <li>
-              <NavLink to={"/contacts"}>CONTACT</NavLink>
+              <NavLink to="/contacts" className="hover:text-white transition">
+                Contact
+              </NavLink>
             </li>
           </ul>
         </div>
-        <div className="w-96 h-60 ">
-          <h1 className="font-bold text-gray-300 text-2xl mt-5 sm:mt-9 mb-2 pl-2">
-            ADDRESS
-          </h1>
-          <p className="text-gray-400 pl-2">
-            Arsalan Detailing Services New Delhi, India Ph no. 9199486786
+        {/* Address */}
+        <div className="flex-1 min-w-[220px]">
+          <h2 className="font-bold text-xl mb-3">Address</h2>
+          <p className="text-gray-400 text-sm">
+            MetalWorks Detailing Solutions
+            <br />
+            New Delhi, India
+            <br />
+            Ph no. xxxxxxxxxx
           </p>
         </div>
       </div>
-    </>
+      <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500 text-xs">
+        &copy; {new Date().getFullYear()} MetalWorks Detailing Solutions. All
+        rights reserved.
+      </div>
+    </footer>
   );
 };
 
