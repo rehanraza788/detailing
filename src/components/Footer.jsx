@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router";
 
 const Footer = () => {
   return (
@@ -15,40 +14,16 @@ const Footer = () => {
             the commercial and industrial industry.
           </p>
         </div>
-        {/* Quick Links */}
+        {/* Services */}
         <div className="flex-1 min-w-[180px]">
-          <h2 className="font-bold text-xl mb-3">Quick Links</h2>
+          <h2 className="font-bold text-xl mb-3">Our Services</h2>
           <ul className="space-y-2 text-gray-400 text-sm">
-            <li>
-              <NavLink to="/" className="hover:text-white transition">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className="hover:text-white transition">
-                About Us
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/service" className="hover:text-white transition">
-                Services
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/project" className="hover:text-white transition">
-                Projects
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/samples" className="hover:text-white transition">
-                Samples
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/contacts" className="hover:text-white transition">
-                Contact
-              </NavLink>
-            </li>
+            <li>Structural Steel Detailing</li>
+            <li>Miscellaneous Steel Detailing</li>
+            <li>Pipe Rack Support Structure</li>
+            <li>Connection Design</li>
+            <li>3D Modeling</li>
+            <li>Technical Drawings</li>
           </ul>
         </div>
         {/* Address */}
