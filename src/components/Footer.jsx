@@ -9,9 +9,9 @@ const Footer = () => {
           <h2 className="font-bold text-xl mb-3">About Us</h2>
           <p className="text-gray-400 text-sm">
             MetalWorks Detailing Solutions provides industry leading steel
-            detailing services. MDS is an innovative Structural Steel Detailing
-            company committed to providing quality steel detailing services to
-            the commercial and industrial industry.
+            detailing services.MetalWorks Detailing Solutions is an innovative
+            Structural Steel Detailing company committed to providing quality
+            steel detailing services to the commercial and industrial industry.
           </p>
         </div>
         {/* Services */}

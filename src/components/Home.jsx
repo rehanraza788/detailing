@@ -1,4 +1,3 @@
-import React from "react";
 import SwiperImage from "./SwiperImage";
 import HomePageContent from "./HomePageContent";
 

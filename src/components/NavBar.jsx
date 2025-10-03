@@ -12,8 +12,8 @@ const NavBar = () => {
       setScrolled(isScrolled);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => {
@@ -32,34 +32,47 @@ const NavBar = () => {
   const handleNavClick = (href) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
     setMenuOpen(false);
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled 
-        ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200' 
-        : 'bg-transparent'
-    }`}>
+    <nav
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#home" className="flex items-center space-x-3" onClick={(e) => {e.preventDefault(); handleNavClick('#home')}}>
+            <a
+              href="#home"
+              className="flex items-center space-x-3"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick("#home");
+              }}
+            >
               <div className="w-10 h-10 bg-gradient-to-br from-gray-700 to-gray-900 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">M</span>
               </div>
               <div className="hidden sm:block">
-                <h1 className={`font-bold text-2xl transition-colors ${
-                  scrolled ? 'text-gray-900' : 'text-white'
-                }`}>
+                <h1
+                  className={`font-bold text-2xl transition-colors ${
+                    scrolled ? "text-gray-900" : "text-white"
+                  }`}
+                >
                   MetalWorks
                 </h1>
-                <p className={`text-sm transition-colors ${
-                  scrolled ? 'text-gray-600' : 'text-gray-300'
-                }`}>
+                <p
+                  className={`text-sm transition-colors ${
+                    scrolled ? "text-gray-600" : "text-gray-300"
+                  }`}
+                >
                   Detailing Solutions
                 </p>
               </div>
@@ -73,11 +86,14 @@ const NavBar = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  onClick={(e) => {e.preventDefault(); handleNavClick(item.href)}}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(item.href);
+                  }}
                   className={`px-3 py-2 text-sm font-medium transition-all duration-200 relative group cursor-pointer ${
                     scrolled
-                      ? 'text-gray-700 hover:text-gray-900'
-                      : 'text-white hover:text-gray-300'
+                      ? "text-gray-700 hover:text-gray-900"
+                      : "text-white hover:text-gray-300"
                   }`}
                 >
                   {item.name}
@@ -89,8 +105,8 @@ const NavBar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <button 
-              onClick={() => handleNavClick('#contact')}
+            <button
+              onClick={() => handleNavClick("#contact")}
               className="bg-gray-700 hover:bg-gray-800 text-white px-6 py-2.5 rounded-lg font-medium transition-all duration-200 hover:shadow-lg"
             >
               Get Quote
@@ -103,8 +119,8 @@ const NavBar = () => {
               onClick={toggleMenu}
               className={`p-2 rounded-md transition-colors ${
                 scrolled
-                  ? 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
-                  : 'text-white hover:text-gray-300'
+                  ? "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                  : "text-white hover:text-gray-300"
               }`}
             >
               {menuOpen ? (
@@ -126,15 +142,18 @@ const NavBar = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  onClick={(e) => {e.preventDefault(); handleNavClick(item.href)}}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(item.href);
+                  }}
                   className="block px-4 py-3 text-base font-medium rounded-lg transition-colors text-gray-700 hover:text-gray-900 hover:bg-gray-50 cursor-pointer"
                 >
                   {item.name}
                 </a>
               ))}
               <div className="pt-4 mt-4 border-t border-gray-200">
-                <button 
-                  onClick={() => handleNavClick('#contact')}
+                <button
+                  onClick={() => handleNavClick("#contact")}
                   className="w-full bg-gray-700 hover:bg-gray-800 text-white px-4 py-3 rounded-lg font-medium transition-colors"
                 >
                   Get Quote
