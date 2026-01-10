@@ -136,7 +136,7 @@ const HomePageContent = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              About MetalWorks Detailing Solutions
+              About MetalsAxis Solutions
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               A new venture founded by experienced professionals with 15+ years
@@ -148,9 +148,9 @@ const HomePageContent = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p className="text-gray-700 text-lg leading-relaxed">
-                MetalWorks Detailing Solutions is a newly established structural
-                steel detailing company backed by over 15 years of hands-on
-                industry experience.
+                MetalsAxis Solutions is a newly established structural steel
+                detailing company backed by over 15 years of hands-on industry
+                experience.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Our team has partnered with reputed organizations on complex

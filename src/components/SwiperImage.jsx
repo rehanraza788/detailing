@@ -16,31 +16,42 @@ import { FiArrowRight, FiPlay, FiPhone } from "react-icons/fi";
 
 function SwiperImage() {
   const [isLoading, setIsLoading] = useState(true);
-  
+
   // Preload first image for faster initial load
   useEffect(() => {
     const firstImage = new Image();
-    firstImage.src = "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=60&auto=format";
+    firstImage.src =
+      "https://cdn.pixabay.com/photo/2016/05/02/13/47/germany-1367255_1280.jpg";
     firstImage.onload = () => setIsLoading(false);
   }, []);
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=60&auto=format",
-      title: "Structural Design Vision",
-      subtitle: "Bringing years of expertise to innovative steel detailing solutions",
+      url: "https://cdn.pixabay.com/photo/2016/05/02/13/47/germany-1367255_1280.jpg",
+      title: "Structural Detailed Vision",
+      subtitle:
+        "Bringing years of expertise to innovative steel detailing solutions",
       badge: "15+ Years Experience"
     },
     {
-      url: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=60&auto=format", 
-      title: "Engineering Excellence", 
-      subtitle: "Professional structural steel detailing with proven industry experience",
+      url: "https://cdn.pixabay.com/photo/2018/03/21/20/25/hall-3248077_1280.jpg",
+      title: "Engineering Excellence",
+      subtitle:
+        "Professional structural steel detailing with proven industry experience",
       badge: "Expert Team"
     },
     {
-      url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=60&auto=format",
+      url: "https://cdn.pixabay.com/photo/2017/08/02/09/33/architecture-2570419_1280.jpg",
       title: "Precision & Innovation",
-      subtitle: "Advanced 3D modeling technology meets decades of field experience",
+      subtitle:
+        "Advanced 3D modeling technology meets decades of field experience",
       badge: "Latest Technology"
+    },
+    {
+      url: "https://cdn.pixabay.com/photo/2022/02/13/12/35/tiger-turtle-7011048_1280.jpg",
+      title: "Delivering Strength Through Detail",
+      subtitle:
+        "Accurate steel detailing that transforms design intent into build-ready reality.",
+      badge: "Delivering Trust"
     }
   ];
 
@@ -54,7 +65,9 @@ function SwiperImage() {
           </div>
         </div>
       )}
-      <div className={`relative overflow-hidden ${isLoading ? 'hidden' : 'block'}`}>
+      <div
+        className={`relative overflow-hidden ${isLoading ? "hidden" : "block"}`}
+      >
         <Swiper
           centeredSlides={true}
           autoplay={{
@@ -83,12 +96,13 @@ function SwiperImage() {
                     loading="lazy"
                     decoding="async"
                     onError={(e) => {
-                      e.target.src = "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=60&auto=format";
+                      e.target.src =
+                        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=60&auto=format";
                     }}
                   />
                   {/* Gradient overlay for better text readability */}
                   <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
-                  
+
                   {/* Hero Content */}
                   <div className="absolute inset-0 flex items-center">
                     <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
@@ -98,24 +112,24 @@ function SwiperImage() {
                           <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
                           {slide.badge}
                         </div>
-                        
+
                         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
                           {slide.title}
                         </h1>
                         <p className="text-lg md:text-xl mb-8 text-gray-200 max-w-2xl">
                           {slide.subtitle}
                         </p>
-                        
+
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4">
                           <button className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2 group hover:shadow-lg">
                             Start Your Project
                             <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
                           </button>
-                          <button className="border-2 border-white/80 text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2 backdrop-blur-sm">
+                          {/* <button className="border-2 border-white/80 text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2 backdrop-blur-sm">
                             <FiPlay className="w-5 h-5" />
                             See Our Work
-                          </button>
+                          </button> */}
                         </div>
                       </div>
                     </div>

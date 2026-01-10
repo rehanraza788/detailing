@@ -1,4 +1,3 @@
-import SwiperImage from "./SwiperImage";
 import HomePageContent from "./HomePageContent";
 
 const Home = () => {

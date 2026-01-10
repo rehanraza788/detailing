@@ -65,14 +65,14 @@ const NavBar = () => {
                     scrolled ? "text-gray-900" : "text-white"
                   }`}
                 >
-                  MetalWorks
+                  MetalsAxis
                 </h1>
                 <p
                   className={`text-sm transition-colors ${
                     scrolled ? "text-gray-600" : "text-gray-300"
                   }`}
                 >
-                  Detailing Solutions
+                  Solutions
                 </p>
               </div>
             </a>
