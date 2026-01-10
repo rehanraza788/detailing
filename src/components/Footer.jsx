@@ -21,9 +21,7 @@ const Footer = () => {
             <li>Structural Steel Detailing</li>
             <li>Miscellaneous Steel Detailing</li>
             <li>Pipe Rack Support Structure</li>
-            <li>Connection Design</li>
             <li>3D Modeling</li>
-            <li>Technical Drawings</li>
           </ul>
         </div>
         {/* Address */}

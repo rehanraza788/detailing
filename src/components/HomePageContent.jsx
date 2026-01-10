@@ -9,7 +9,7 @@ import {
   FiClock,
   FiUsers
 } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import SwiperImage from "./SwiperImage";
 
 const services = [
   {
@@ -79,11 +79,6 @@ const projects = [
 
 const stats = [
   {
-    icon: <FiClock className="w-8 h-8" />,
-    number: "15+",
-    label: "Years Experience"
-  },
-  {
     icon: <FiUsers className="w-8 h-8" />,
     number: "Expert",
     label: "Team Ready"
@@ -103,13 +98,14 @@ const stats = [
 const HomePageContent = () => {
   return (
     <div className="bg-white" id="home">
+      <SwiperImage />
       {/* Hero Content Section */}
       <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-slate-900">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Structural Design{" "}
-              <span className="text-gray-300">Excellence</span>
+              Structural Detailing
+              <span className="text-gray-300"> Excellence</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
               Leveraging 15+ years of industry experience to deliver precision
@@ -119,16 +115,16 @@ const HomePageContent = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+          <div className=" flex justify-around gap-8 mt-16">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="bg-gray-700 text-white w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-4">
                   {stat.icon}
                 </div>
-                <div className="text-3xl font-bold text-gray-900 mb-2">
+                <div className="text-3xl font-bold text-gray-200 mb-2">
                   {stat.number}
                 </div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
+                <div className="text-gray-200 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -152,29 +148,26 @@ const HomePageContent = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p className="text-gray-700 text-lg leading-relaxed">
-                MetalWorks Detailing Solutions is a newly established company
-                founded by industry veterans with over 15 years of experience in
-                structural steel detailing and fabrication. While we are a fresh
-                business, our team brings decades of proven expertise from
-                working with reputed companies on successful projects with
-                aggressive schedules.
+                MetalWorks Detailing Solutions is a newly established structural
+                steel detailing company backed by over 15 years of hands-on
+                industry experience.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
-                Our founders and principal engineers have extensive backgrounds
-                in professional structural steel detailing, having contributed
-                to multiple complex projects across commercial and industrial
-                sectors. This wealth of experience forms the foundation of our
-                commitment to delivering precision solutions using advanced 3D
-                modeling software.
+                Our team has partnered with reputed organizations on complex
+                steel detailing and fabrication projects, delivering
+                high-precision solutions with seamless coordination. Leveraging
+                deep industry experience and advanced 3D modeling technology, we
+                provide fabrication-ready drawings that drive efficiency,
+                accuracy, and on-time project delivery
               </p>
               <div className="bg-gradient-to-r from-gray-50 to-slate-50 p-6 rounded-xl border-l-4 border-gray-600">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Why Choose Our New Venture?
                 </h3>
                 <p className="text-gray-700">
-                  Fresh approach combined with seasoned expertise, dedicated
-                  personal attention, and cutting-edge technology for your
-                  structural steel projects.
+                  We are committed to building long-term partnerships by
+                  providing reliable, cost-effective, and high-quality steel
+                  detailing solutions tailored to our clients’ needs.
                 </p>
               </div>
             </div>
@@ -182,16 +175,16 @@ const HomePageContent = () => {
               <img
                 src="/images/snap_001.png"
                 alt="Steel Detailing Process"
-                className="w-full h-80 object-cover rounded-2xl shadow-xl"
+                className="w-full h-[450px] object-fill rounded-2xl shadow-xl"
                 onError={(e) => {
                   e.target.src =
                     "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80";
                 }}
               />
-              <div className="absolute -bottom-6 -right-6 bg-gray-700 text-white p-4 rounded-xl shadow-lg">
+              {/* <div className="absolute -bottom-6 -right-6 bg-gray-700 text-white p-4 rounded-xl shadow-lg">
                 <div className="text-2xl font-bold">15+</div>
                 <div className="text-sm">Years Experience</div>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -285,7 +278,7 @@ const HomePageContent = () => {
       </section>
 
       {/* Projects Showcase */}
-      <section className="py-20 bg-gray-50" id="projects">
+      {/* <section className="py-20 bg-gray-50" id="projects">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -302,42 +295,38 @@ const HomePageContent = () => {
                 key={index}
                 className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
-                <Link to={project.link}>
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={project.img}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      onError={(e) => {
-                        e.target.src =
-                          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80";
-                      }}
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm font-medium">
-                        {project.category}
-                      </span>
-                    </div>
-                    <div className="absolute bottom-4 right-4">
-                      <span className="bg-white/90 backdrop-blur-sm text-gray-900 px-3 py-1 rounded-full text-sm font-medium">
-                        {project.stats}
-                      </span>
-                    </div>
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={project.img}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    onError={(e) => {
+                      e.target.src =
+                        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80";
+                    }}
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      {project.category}
+                    </span>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-gray-700 transition-colors">
-                      {project.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                      {project.description}
-                    </p>
+                  <div className="absolute bottom-4 right-4">
+                    <span className="bg-white/90 backdrop-blur-sm text-gray-900 px-3 py-1 rounded-full text-sm font-medium">
+                      {project.stats}
+                    </span>
                   </div>
-                </Link>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-gray-700 transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">{project.description}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section
