@@ -173,7 +173,7 @@ const HomePageContent = () => {
             </div>
             <div className="relative">
               <img
-                src="/images/snap_001.png"
+                src={`${import.meta.env.BASE_URL}images/snap_001.png`}
                 alt="Steel Detailing Process"
                 className="w-full h-[450px] object-fill rounded-2xl shadow-xl"
                 onError={(e) => {

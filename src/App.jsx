@@ -6,15 +6,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <NavBar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 };
 
