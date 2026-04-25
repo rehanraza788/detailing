@@ -108,7 +108,7 @@ const HomePageContent = () => {
               <span className="text-gray-300"> Excellence</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
-              Leveraging 15+ years of industry experience to deliver precision
+              Leveraging decades of industry experience to deliver precision
               steel detailing services. Our expert team brings proven expertise
               to your structural engineering projects.
             </p>
@@ -149,7 +149,7 @@ const HomePageContent = () => {
             <div className="space-y-6">
               <p className="text-gray-700 text-lg leading-relaxed">
                 MetalsAxis Solutions is a newly established structural steel
-                detailing company backed by over 15 years of hands-on industry
+                detailing company backed by over 15+ years of hands-on industry
                 experience.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
