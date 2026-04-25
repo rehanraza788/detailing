@@ -72,7 +72,7 @@ const NavBar = () => {
                     scrolled ? "text-gray-600" : "text-gray-300"
                   }`}
                 >
-                  Solutions
+                  Detailing Solutions
                 </p>
               </div>
             </a>
